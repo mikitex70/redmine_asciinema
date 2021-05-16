@@ -22,6 +22,8 @@ This plugin allow embedding *asciinema* casts into [Redmine](http://www.redmine.
 Use the macro `asciinema_cast` to insert casts in a wiki page.
 
 The supported options are (see [asciinema-player documentation](https://github.com/asciinema/asciinema-player#asciinema-player-element-attributes) for more details):
+* `attachment`: cast taken from wiki page attachment
+* `dmsf`: cast taken from a file store with the DMSF management
 * `cols`: number of colums of terminal
 * `rows`: number of rows of terminal
 * `autoplay`: start play on load
