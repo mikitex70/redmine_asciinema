@@ -2,8 +2,8 @@ Redmine::Plugin.register :redmine_asciinema do
   name 'Redmine Asciinema plugin'
   author 'Michele Tessaro'
   description 'This is a plugin for Redmine'
-  version '0.1.0'
-  url 'http://example.com/path/to/plugin'
+  version '0.1.1'
+  url 'https://github.com/mikitex70/redmine_asciinema'
   author_url 'https://github.com/mikitex70'
   
   requires_redmine :version_or_higher => '3.2.0'

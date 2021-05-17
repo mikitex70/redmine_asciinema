@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'redmine'
  
 Redmine::WikiFormatting::Macros.register do
@@ -19,7 +20,7 @@ EOF
         if !(options[:attachment].blank?)
             attachment = container.attachments.where(filename: options[:attachment]).last
             url = url_for(:controller => 'attachments', :action => 'download', :id => attachment.id)
-        elsif if Redmine::Plugin.installed?(:redmine_dmsf) && !(options[:dmsf].blank?)
+        elsif Redmine::Plugin.installed?(:redmine_dmsf) && !(options[:dmsf].blank?)
             folderName = File.dirname(options[:dmsf])
             folder = DMSF_helper.deep_folder_search(project, folderName)
             # Search the document in DMSF
