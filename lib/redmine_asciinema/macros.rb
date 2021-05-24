@@ -10,7 +10,7 @@ EOF
         return "«Please save content first»" unless obj
         return "asciinema animations are available only wiki pages»" unless obj.is_a?(WikiContent)
         
-        optNames = [:cols, :rows, :autoplay, :preload, :loop, :start_at, :speed, :idle_time_limit, :poster, :font_size, :theme, :title, :author, :author_url, :author_url_img]
+        optNames = [:cols, :rows, :autoplay, :preload, :loop, :start_at, :speed, :idle_time_limit, :poster, :font_size, :theme, :title, :author, :author_url, :author_img_url]
         
         args, options = extract_macro_options(args, *(optNames+[:attachment, :dmsf]))
 

@@ -2,9 +2,13 @@ asciinema-player svg.icon {
     padding-left: 0px;
 }
 
-asciinema-player pre.asciinema-terminal {
+asciinema-player pre.asciinema-terminal, asciinema-player div.control-bar {
     overflow-x: hidden;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+.jstb_asciinema_cast {
+    background-image: url(../images/jstb_asciinema.png);
 }

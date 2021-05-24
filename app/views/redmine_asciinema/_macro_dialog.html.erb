@@ -1,0 +1,81 @@
+<div id="dlg_redmine_asciinema" title="<%= l(:asciinema_dlg_title) %>" style="display:none">
+  <form id="asciinema_form">
+    <input type="hidden" id="asciinema_attachment" name="asciinema_attachment"/>
+    <input type="hidden" id="asciinema_dmsf" name="asciinema_dmsf"/>
+    <fieldset>
+      <div class="tabular">
+        <p>
+          <label for="asciinema_srctype"><%= l(:asciinema_dlg_srctype) %></label>
+          <input type="radio" name="asciinema_srctype" ignored="true" value="attachment"/><%= l(:asciinema_dlg_attachment) %>
+          <input type="radio" name="asciinema_srctype" ignored="true" value="dmsf"/><%= l(:asciinema_dlg_dmsf) %>
+          <label for="asciinema_src"><%= l(:asciinema_dlg_src) %></label>
+          <input type="text" name="asciinema_src" id="asciinema_src" size="32" maxlength="32" ignored="true"/>
+        </p>
+        
+        <p>
+          <label for="asciinema_rows"><%= l(:asciinema_dlg_rows) %></label>
+          <input type="text" name="asciinema_rows" id="asciinema_rows" class="digits" size="3" maxlength="3"/> <%= l(:asciinema_dlg_characters) %>
+        </p>
+        <p>
+          <label for="asciinema_cols"><%= l(:asciinema_dlg_cols) %></label>
+          <input type="text" name="asciinema_cols" id="asciinema_cols" class="digits" size="3" maxlength="3"/> <%= l(:asciinema_dlg_characters) %>
+        </p>
+
+        <p>
+          <label for="asciinema_autoplay"><%= l(:asciinema_dlg_autoplay) %></label>
+          <input type="checkbox" name="asciinema_autoplay" id="asciinema_autoplay" value="true"/>
+        </p>
+        <p>
+          <label for="asciinema_preload"><%= l(:asciinema_dlg_preload) %></label>
+          <input type="checkbox" name="asciinema_preload" id="asciinema_preload" value="true"/>
+        </p>
+        <p>
+          <label for="asciinema_loop"><%= l(:asciinema_dlg_loop) %></label>
+          <input type="checkbox" name="asciinema_loop" id="asciinema_loop" value="true"/>
+        </p>
+
+        <p>
+          <label for="asciinema_start_at"><%= l(:asciinema_dlg_start_at) %></label>
+          <input type="text" name="asciinema_start_at" id="asciinema_start_at" size="32"/>
+        </p>
+
+        <p>
+          <label for="asciinema_speed"><%= l(:asciinema_dlg_speed) %></label>
+          <input type="number" name="asciinema_speed" id="asciinema_speed" class="digits" size="2" maxlength="2" min=1/>
+        </p>
+        <p>
+          <label for="asciinema_idle_time_limit"><%= l(:asciinema_dlg_idle_time_limit) %></label>
+          <input type="text" name="asciinema_idle_time_limit" id="asciinema_idle_time_limit" class="digits" size="2" maxlength="2"/> <%= l(:asciinema_dlg_seconds) %>
+        </p>
+        <p>
+          <label for="asciinema_poster"><%= l(:asciinema_dlg_poster) %></label>
+          <input type="text" name="asciinema_poster" id="asciinema_poster" size="32"/>
+        </p>
+        <p>
+          <label for="asciinema_font_size"><%= l(:asciinema_dlg_font_size) %></label>
+          <input type="text" name="asciinema_font_size" id="asciinema_font_size" class="digits" size="2" maxlength="2"/>
+        </p>
+        <p>
+          <label for="asciinema_theme"><%= l(:asciinema_dlg_theme) %></label>
+          <input type="text" name="asciinema_theme" id="asciinema_theme" size="32"/>
+        </p>
+        <p>
+          <label for="asciinema_title"><%= l(:asciinema_dlg_title) %></label>
+          <input type="text" name="asciinema_title" id="asciinema_title" size="32"/>
+        </p>
+        <p>
+          <label for="asciinema_author"><%= l(:asciinema_dlg_author) %></label>
+          <input type="text" name="asciinema_author" id="asciinema_author" size="32"/>
+        </p>
+        <p>
+          <label for="asciinema_author_url"><%= l(:asciinema_dlg_author_url) %></label>
+          <input type="text" name="asciinema_author_url" id="asciinema_author_url" size="32"/>
+        </p>
+        <p>
+          <label for="asciinema_author_img_url"><%= l(:asciinema_dlg_author_img_url) %></label>
+          <input type="text" name="asciinema_author_img_url" id="asciinema_author_img_url" size="32"/>
+        </p>
+      </div>
+    </fieldset>
+  </form>
+</div>
